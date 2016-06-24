@@ -39,7 +39,7 @@ class Login_controller extends CI_Controller
     		$name = $this->input->get_post('txtUsuario');
 			$pass = $this->input->get_post('txtpassword');
 			
-           // echo $name."/".$pass;
+            echo $name."/".$pass;
             //echo md5($pass);
            $data['user'] = $this->login_model->login($name, $pass);
 
@@ -54,19 +54,15 @@ class Login_controller extends CI_Controller
                                 'logged' => 1
                                 );
                 $this->session->set_userdata($sessiondata);
-                //echo "FELICIDADES!!!!!";
-                //print_r($sessiondata);
 
-                 /* if($this->session->userdata('Permiso')=='0')
+
+                  if($this->session->userdata('Permiso')=='0')
                 {
-                    echo "FELICIDADES!!!!!";
-                    //redirect('reservas'); //ruta?????
+
+                    redirect('calendario');
                 }
 
-                if($this->session->userdata('Permiso')=='1')
-                {
-                    redirect('cardista');//ruta?????
-                }*/
+
     			 
     		}
     	}

@@ -9,32 +9,9 @@ $route['translate_uri_dashes'] = FALSE;
 /****** MIS RUTAS *****/
 
 
-// LOGIN
+
 $route['login'] = 'login_controller/Acreditar';
+$route['calendario'] = 'calendario_controller/calendario';
+$route['Factura'] = 'sales_controller/Facturas';
 
-
-// FIN LOGIN
-/************************/
-//RUTAS ADMIN
-
-
-
-
-
-//FIN ADMIN
-/************************/
-
-// RUTAS SERVICIO CLIENTE
-
-
-
-
-//FIN SERVICIO CLIENTE
-/***************************/
-// RUTAS SUPERVISOR
-
-
-
-
-//FIN SUPERVISOR
 /****************************************/
