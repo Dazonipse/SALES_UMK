@@ -4,27 +4,29 @@ class Login_model extends CI_Model
     public function __construct()
     {
         parent::__construct();
-        //$this->load->database();
+        $this->load->database();
     }
     
-    public function index()
+    /*public function index()
     {
-        $this->load->view('headers/header_login');
-        $this->load->view('Pages/login_view');
+        $this->load->view('header/header_login');
+        $this->load->view('contenido/login/login');
         $this->load->view('footer/footer_login');
-    }
+    }*/
      public function login($name, $pass ){
-        //echo $name;
+
         if($name != FALSE && $pass != FALSE){
 
-            $this->db->where('NombreUsario', $name);
+            $this->db->where('NombreUsuario', $name);
             $this->db->where('Password',$pass);
             
             $query = $this->db->get('usuarios');
-            if($query->num_rows() == 1){
+            print_r($query->result_array());
+            /*if($query->num_rows() == 1){
                 return $query->result_array();
             }
-            return 0;
+            return 0;*/
+
         }
     }
     public function Guardar($name,$Contraseña,$Permisos){

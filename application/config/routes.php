@@ -10,13 +10,13 @@ $route['translate_uri_dashes'] = FALSE;
 
 
 // LOGIN
-$route['Inicio']=;
+$route['login'] = 'login_controller/Acreditar';
 
 
 // FIN LOGIN
 /************************/
 //RUTAS ADMIN
-$route['Inicio']=;
+
 
 
 

@@ -5803,7 +5803,8 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #FFF;
-  background-color: #ff4081;
+  background-color: #00658e;
+  /*background-color: #ff4081;Antiguo Estilo*/
   text-align: center;
   letter-spacing: .5px;
   -webkit-transition: 0.2s ease-out;
@@ -5813,7 +5814,8 @@ small {
   transition: 0.2s ease-out;
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
-    background-color: #ff5a92; }
+    /*background-color: #ff5a92; antiguo*/
+    background-color: #00658eg;}
 
 .btn-floating {
   display: inline-block;
@@ -6302,8 +6304,10 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]),
   input[type=search]:focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #ff4081;
-    box-shadow: 0 1px 0 0 #ff4081; }
+    border-bottom: 1px solid #00658e;
+    box-shadow: 0 1px 0 0 #00658e;
+    /*border-bottom: 1px solid #ff4081;
+    box-shadow: 0 1px 0 0 #ff4081;*/}
   input[type=text]:focus:not([readonly]) + label,
   input[type=password]:focus:not([readonly]) + label,
   input[type=email]:focus:not([readonly]) + label,
