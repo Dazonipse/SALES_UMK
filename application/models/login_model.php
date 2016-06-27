@@ -22,10 +22,10 @@ class Login_model extends CI_Model
             
             $query = $this->db->get('usuarios');
             print_r($query->result_array());
-            /*if($query->num_rows() == 1){
+            if($query->num_rows() == 1){
                 return $query->result_array();
             }
-            return 0;*/
+            return 0;
 
         }
     }

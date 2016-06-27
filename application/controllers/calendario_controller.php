@@ -16,6 +16,7 @@ class Calendario_controller extends CI_Controller
     public function calendario()
     {
         $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
         $this->load->view('contenido/usuario/calendario');
         $this->load->view('footer/footer');
     }

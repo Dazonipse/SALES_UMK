@@ -56,7 +56,7 @@ class Login_controller extends CI_Controller
                 $this->session->set_userdata($sessiondata);
 
 
-                  if($this->session->userdata('Permiso')=='0')
+                  if($this->session->userdata)
                 {
 
                     redirect('calendario');
