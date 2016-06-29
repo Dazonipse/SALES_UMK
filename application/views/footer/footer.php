@@ -29,6 +29,14 @@ Scripts
 <!--scrollbar-->
 <script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
+<!-- chartjs -->
+<script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/chartjs/chart.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/chartjs/chart-script.js"></script>
+
+<!-- sparkline -->
+<script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/sparkline/sparkline-script.js"></script>
+
 <!-- chartist -->
 <script type="text/javascript" src="<?PHP echo base_url();?>assets/js/plugins/chartist-js/chartist.min.js"></script>
 
@@ -43,3 +51,4 @@ Scripts
 
 </body>
 </html>
+

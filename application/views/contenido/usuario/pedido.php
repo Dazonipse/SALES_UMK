@@ -7,28 +7,28 @@
         <div id="mail-app" class="section">
             <div class="row">
                 <div class="col s12">
-                    <nav class="red">
+                    <nav class="colornav">
                         <div class="nav-wrapper">
                             <div class="left col s12 m5 l5">
                                 <ul>
-                                    <li><a href="#!" class="email-menu"><i class="mdi-navigation-menu"></i></a>
+                                    <li><a href="#!" class="email-menu"><!--<i class="mdi-navigation-menu"></i>--></a>
                                     </li>
-                                    <li><a href="#!" class="email-type">Primary</a>
+                                    <li><a  href="#!" class="email-type">PEDIDOS</a>
                                     </li>
-                                    <li class="right"><a href="#!"><i class="mdi-action-search"></i></a>
+                                   <li class="right"><a href="#!"> <!--<i class="mdi-action-search"></i>--></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="col s12 m7 l7 hide-on-med-and-down">
                                 <ul class="right">
-                                    <li><a href="#!"><i class="mdi-content-archive"></i></a>
+                                    <!--<li><a href="#!"><i class="mdi-content-archive"></i></a>
                                     </li>
                                     <li><a href="#!"><i class="mdi-action-delete"></i></a>
                                     </li>
-                                    <li><a href="#!"><i class="mdi-content-mail"></i></a>
+                             <li><a href="#!"><i class="mdi-content-mail"></i></a>
                                     </li>
                                     <li><a href="#!"><i class="mdi-navigation-more-vert"></i></a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </div>
 
@@ -36,7 +36,7 @@
                     </nav>
                 </div>
                 <div class="col s12">
-                    <div id="email-sidebar" class="col s2 m1 s1 card-panel">
+                    <!--<div id="email-sidebar" class="col s2 m1 s1 card-panel">
                         <ul>
                             <li>
                                 <img src="images/avatar.jpg" alt="" class="circle responsive-img valign profile-image">
@@ -51,101 +51,105 @@
                                 <a href="#!"><i class="mdi-maps-local-offer"></i></a>
                             </li>
                             <li>
-                                <a href="#!"><i class="mdi-alert-error"></i></a>
+                                <a href="#!"><i class="mdi-alert-error"></i>ggg</a>
                             </li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div id="email-list" class="col s10 m4 l4 card-panel z-depth-1">
                         <ul class="collection">
                             <li class="collection-item avatar email-unread">
-                                <i class="mdi-social-group icon blue-text"></i>
+                                <!--<i class="mdi-social-group icon blue-text"></i>-->
                                 <span class="email-title">Social</span>
                                 <p class="truncate grey-text ultra-small">You have Google+ request from john doe.</p>
-                                <a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>
+                                <!--<a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>-->
                             </li>
                             <li class="collection-item avatar email-unread">
-                                <i class="mdi-maps-local-offer icon green-text"></i>
-                                <span class="email-title">Promotions</span>
-                                <p class="truncate grey-text ultra-small">Amazone, Flipkart 50% off on summer sale.</p>
-                                <a href="#!" class="secondary-content"><span class="new badge green">6</span></a>
+                                <!--<i class="mdi-social-group icon blue-text"></i>-->
+                                <span class="email-title">Social</span>
+                                <p class="truncate grey-text ultra-small">You have Google+ request from john doe.</p>
+                                <!--<a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>-->
                             </li>
                             <li class="collection-item avatar email-unread">
-                                <i class="mdi-alert-error icon yellow-text text-darken-3"></i>
-                                <span class="email-title">Updates</span>
-                                <p class="truncate grey-text ultra-small">Google play application updates for your mobile.</p>
-                                <a href="#!" class="secondary-content"><span class="new badge yellow darken-3">2</span></a>
+                                <!--<i class="mdi-social-group icon blue-text"></i>-->
+                                <span class="email-title">Social</span>
+                                <p class="truncate grey-text ultra-small">You have Google+ request from john doe.</p>
+                                <!--<a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>-->
                             </li>
                             <li class="collection-item avatar email-unread">
-                                <span class="circle red lighten-1">A</span>
-                                <span class="email-title">Amazone.com</span>
-                                <p class="truncate grey-text ultra-small">Summer sale is now going on.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">12:10 am</span></a>
+                                <!--<i class="mdi-social-group icon blue-text"></i>-->
+                                <span class="email-title">Social</span>
+                                <p class="truncate grey-text ultra-small">You have Google+ request from john doe.</p>
+                                <!--<a href="#!" class="secondary-content"><span class="new badge blue">4</span></a>-->
                             </li>
-                            <li class="collection-item avatar selected">
-                                <img src="images/avatar.jpg" alt="" class="circle">
-                                <span class="email-title">Andy Brown</span>
-                                <p class="truncate grey-text ultra-small">Hay Joe, we have next project for this summer.</p>
-                                <a href="#!" class="secondary-content email-time"><i class="mdi-editor-attach-file attach-file"></i> <span class="grey-text ultra-small">12:10 am</span></a>
+                            <li class="collection-item avatar selected blue">
+                                <span class="email-title">PEDIDO 1</span>
+                                <p class="truncate grey-text ultra-small">BREVE DESCRIPCION DEL PEDIDO.</p>
+
                             </li>
                             <li class="collection-item avatar email-unread">
-                                <span class="circle grey darken-1">T</span>
-                                <span class="email-title">Tuts+</span>
+                                <!--<span class="circle grey darken-1">T</span>
+                                <span class="email-title">Tuts+</span>-->
+                                <span class="email-title">Más pedidos</span>
                                 <p class="truncate grey-text ultra-small">Update your code skill, free tutorial for web development.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">2:05 am</span></a>
+                                <!--<a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">2:05 am</span></a>-->
                             </li>
-                            <li class="collection-item avatar email-unread">
-                                <span class="circle indigo darken-1">F</span>
-                                <span class="email-title">Facebook.com</span>
-                                <p class="truncate grey-text ultra-small">You have new friend request from emy nelson.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">1:15 pm</span></a>
-                            </li>
-                            <li class="collection-item avatar email-unread">
-                                <span class="circle light-blue">T</span>
-                                <span class="email-title">Twitter</span>
-                                <p class="truncate grey-text ultra-small">You have 5 new followers today, let's check it out.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">8:30 pm</span></a>
-                            </li>
-                            <li class="collection-item avatar email-unread">
-                                <span class="circle green accent-4">E</span>
-                                <span class="email-title">Envato Studio</span>
-                                <p class="truncate grey-text ultra-small">Envato Studio Provider News : Score the new stuff.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">5:18 am</span></a>
-                            </li>
-                            <li class="collection-item avatar email-unread">
-                                <span class="circle red">G</span>
-                                <span class="email-title">Gmail</span>
-                                <p class="truncate grey-text ultra-small">You have 5 new mail today.</p>
-                                <a href="#!" class="secondary-content email-time"><span class="blue-text ultra-small">6:38 am</span></a>
-                            </li>
+
                         </ul>
                     </div>
+                    <!--Detalles de Pedidos-->
                     <div id="email-details" class="col s12 m7 l7 card-panel">
-                        <p class="email-subject truncate">New app design for iPhone <span class="email-tag grey lighten-3">inbox</span> <span class="email-tag  light-blue lighten-4">projects</span> <i class="mdi-action-star-rate yellow-text text-darken-3 right"></i>
-                        </p>
+                        <p class="email-subject truncate">PEDIDO 1</p>
                         <hr class="grey-text text-lighten-2">
                         <div class="email-content-wrap">
                             <div class="row">
                                 <div class="col s10 m10 l10">
                                     <ul class="collection">
-                                        <li class="collection-item avatar">
-                                            <img src="images/avatar.jpg" alt="" class="circle">
-                                            <span class="email-title">Andy Brown</span>
-                                            <p class="truncate grey-text ultra-small">To me, John Doe</p>
-                                            <p class="grey-text ultra-small">Yesterday</p>
+                                        <li class="collection-item avatar ">
+                                            <h6 >DATOS DEL CLIENTE</h6>
+                                            <p class="centrado">FARMACIA LA CARIDAD</p><br>
+                                            <p class="centrado">Dirrección: por las cuajadas</p><br>
+                                            <p class="centrado">telefono: 88888888</p><br>
+
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col s2 m2 l2 email-actions">
-                                    <a href="#!"><span><i class="mdi-content-reply"></i></span></a>
-                                    <a href="#!"><span><i class="mdi-navigation-more-vert"></i></span></a>
-                                </div>
+
                             </div>
                             <div class="email-content">
-                                <p>Hi Mike,</p>
-                                <p>We have new project requirements last night.</p>
-                                <p>The standard font Material Design uses is Roboto. We have included the font files with our framework.</p>
-                                <p>Cheers!
-                                    <br>Andy Brown</p>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>fecha</th>
+                                        <th>no. factura</th>
+                                        <th>codigo</th>
+                                        <th>descripcion</th>
+                                        <th>cantidad</th>
+                                        <th>precio</th>
+                                        <th>total</th>
+                                    </tr>
+                                    </thead>
+
+                                    <tbody>
+                                    <tr>
+                                        <td>29-0-20106</td>
+                                        <td>fc0001254</td>
+                                        <td>1010245</td>
+                                        <td>tadalafil</td>
+                                        <td>2</td>
+                                        <td>10</td>
+                                        <td>20<td>
+                                    </tr>
+                                    <tr>
+                                        <td>29-06-2016</td>
+                                        <td>0075016</td>
+                                        <td>231546</td>
+                                        <td>ekisde</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <hr>
@@ -153,24 +157,21 @@
                             <div class="row">
                                 <div class="col s10 m10 l10">
                                     <ul class="collection">
-                                        <li class="collection-item avatar">
+                                       <!-- <li class="collection-item avatar">
                                             <span class="circle light-blue">M</span>
                                             <span class="email-title">Mike Parker</span>
                                             <p class="truncate grey-text ultra-small">To Andy Brown</p>
                                             <p class="grey-text ultra-small">6:10 pm</p>
-                                        </li>
+                                        </li>-->
                                     </ul>
                                 </div>
-                                <div class="col s2 m2 l2 email-actions">
+                                <!--<div class="col s2 m2 l2 email-actions">
                                     <a href="#!"><span><i class="mdi-content-reply"></i></span></a>
                                     <a href="#!"><span><i class="mdi-navigation-more-vert"></i></span></a>
-                                </div>
+                                </div>--
                             </div>
                             <div class="email-content">
-                                <p>Hi Andy,</p>
-                                <p>We bundle our framework with the latest iteration of Roboto Google has released. It comes with 5 different font weights you can use: 200, 300, 400, 500, 600.</p>
-                                <p>Regards,
-                                    <br>Mike Parker</p>
+                            <p>algo por aqui</p>
                             </div>
                         </div>
                         <div class="email-reply">
@@ -188,18 +189,18 @@
                                     <p class="ultra-small">Forward</p>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
 
                     </div>
                 </div>
             </div>
 
             <!-- Compose Email Trigger -->
-            <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <!--<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
                 <a class="btn-floating btn-large red modal-trigger" href="#modal1">
                     <i class="large mdi-editor-mode-edit"></i>
                 </a>
-            </div>
+            </div>-->
 
 
 

@@ -8,14 +8,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m12 l12">
-                            <h5 class="breadcrumbs-title">FACTURAS</h5> <br>
-                            <!--<ol class="breadcrumb">
-                                <li><a href="index.html">Dashboard</a>
-                                </li>
-                                <li><a href="#">Pages</a>
-                                </li>
-                                <li class="active">Invoice</li>
-                            </ol>-->
+                            <h5 class="breadcrumbs-title">COBROS</h5> <br>
                         </div>
                     </div>
                 </div>
@@ -30,16 +23,6 @@
                         <div class="row section">
                             <div class="col s12 m6 l6">
                                 <img src="<?PHP echo base_url();?>assets/img/unimark.png" " width="60%">
-                                <!--<p>To,
-                                    <br/>
-                                    <span class="strong">Jonathan Doe</span>
-                                    <br/>
-                                    <span>125, ABC Street,</span>
-                                    <br/>
-                                    <span>New Yourk, USA</span>
-                                    <br/>
-                                    <span>+91-(444)-(333)-(221)</span>
-                                </p>-->
                             </div>
 
                             <!--<div class="col s12 m6 l6">
@@ -67,6 +50,23 @@
                                 </div>
 
                             </div>-->
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="selectores">
+                        <div class="row">
+                            <div class="col s3">
+                                <p>RUTA</p>
+                                <select name="" id="">
+                                    <option value="">123</option>
+                              </select>
+                            </div>
+                                <div class="col s6">
+                                    <!--Por fecha-->
+                                    <p>Generar por</p>
+                                    <select name="" id=""></select>
+                                </div>
+
                         </div>
                     </div>
 
@@ -100,64 +100,44 @@
                                 <table class="striped">
                                     <thead>
                                     <tr>
-                                        <th data-field="no">No</th>
-                                        <th data-field="item">Item</th>
-                                        <th data-field="uprice">Unit Price</th>
-                                        <th data-field="price">Unit</th>
-                                        <th data-field="price">Total</th>
+                                        <th >FECHA</th>
+                                        <th >RUTA</th>
+                                        <th >CLIENTE</th>
+                                        <th >MONTO</th>
+                                        <th>TOTAL</th>
+                                        <th>SALDO</th>
+
                                     </tr>
                                     </thead>
                                     <tbody>
+
                                     <tr>
-                                        <td>1.</td>
-                                        <td>MacBook Pro</td>
-                                        <td>$ 1,299.00</td>
-                                        <td>2</td>
-                                        <td>$ 1,100.00</td>
+                                        <td>29/06/2016</td>
+                                        <td>F4</td>
+                                        <td>CL00256</td>
+                                        <td>C$ 500</td>
+                                        <td>C$ 1000</td>
+                                        <td>C$ 500</td>
                                     </tr>
+
                                     <tr>
-                                        <td>2.</td>
-                                        <td>iMAC</td>
-                                        <td>$ 1,099.00</td>
-                                        <td>2</td>
-                                        <td>$ 2,198.00</td>
+                                        <td>29/06/2016</td>
+                                        <td>F4</td>
+                                        <td>CL00256</td>
+                                        <td>C$ 500</td>
+                                        <td>C$ 1000</td>
+                                        <td>C$ 500</td>
                                     </tr>
+
                                     <tr>
-                                        <td>3.</td>
-                                        <td>iPhone</td>
-                                        <td>$ 299.00</td>
-                                        <td>5</td>
-                                        <td>$ 1,495.00</td>
+                                        <td>29/06/2016</td>
+                                        <td>F4</td>
+                                        <td>CL00256</td>
+                                        <td>C$ 500</td>
+                                        <td>C$ 1000</td>
+                                        <td>C$ 500</td>
                                     </tr>
-                                    <tr>
-                                        <td>4.</td>
-                                        <td>iPad 3</td>
-                                        <td>$399.00</td>
-                                        <td>1</td>
-                                        <td>$ 399.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5.</td>
-                                        <td>iPod</td>
-                                        <td>$49.00</td>
-                                        <td>2</td>
-                                        <td>$ 98.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3" class="white"></td>
-                                        <td>Sub Total:</td>
-                                        <td>$ 5,290.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3" class="white"></td>
-                                        <td>Service Tax</td>
-                                        <td>11.00%</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3" class="white"></td>
-                                        <td class="cyan white-text">Grand Total</td>
-                                        <td class="cyan strong white-text">$ 5,871.90</td>
-                                    </tr>
+                                    
                                     </tbody>
                                 </table>
                             </div>
@@ -165,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="invoice-footer">
+                    <!--<div class="invoice-footer">
                         <div class="row">
                             <div class="col s12 m6 l6">
                                 <p class="strong">Payment Method</p>
@@ -178,12 +158,12 @@
                             </div>
                             <div class="col s12 m6 l6 center-align">
                                 <p>Approved By</p>
-                               <!-- <img src="images/signature-scan.png" alt="signature">-->
+                               <img src="images/signature-scan.png" alt="signature">
                                 <p class="header">AMANDA ORTON</p>
                                 <p>Managing Director</p>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>

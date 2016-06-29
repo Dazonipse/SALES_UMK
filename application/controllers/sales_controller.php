@@ -25,5 +25,12 @@ class Sales_controller extends CI_Controller
         $this->load->view('contenido/usuario/pedido');
         $this->load->view('footer/footer');
     }
+    public function Ruta()
+    {
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('contenido/administrador/rutas');
+        $this->load->view('footer/footer');
+    }
 
 }

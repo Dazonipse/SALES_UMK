@@ -15,6 +15,7 @@ $route['salir'] = 'login_controller/Salir';
 
 // FUNCIONALIDAD!!!
 $route['calendario'] = 'calendario_controller/calendario';
-$route['Factura'] = 'sales_controller/Facturas';
+$route['Cobro'] = 'sales_controller/Facturas';
 $route['pedido'] = 'sales_controller/Pedido';
+$route['Ruta'] = 'sales_controller/Ruta';
 /****************************************/

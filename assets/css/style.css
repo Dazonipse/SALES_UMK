@@ -1439,3 +1439,24 @@ footer.page-footer {
       font-size: 0.8rem;
   }
 }
+.CardFondo
+{
+  background: #00658e;
+}
+#perfil
+{
+  margin-left: -25%;
+}
+#pedido
+{
+  margin-left: 85%;
+}
+.colornav
+{
+  background: #00658E;
+}
+
+.centrado
+{
+ text-align: left;
+}
