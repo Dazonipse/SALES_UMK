@@ -11,75 +11,51 @@
         <!-- START LEFT SIDEBAR NAV-->
         <aside id="left-sidebar-nav">
             <ul id="slide-out" class="side-nav fixed leftside-navigation">
-                <li class="user-details cyan darken-2">
+                <li class="user-details " id="colorMenu">
                     <div class="row">
                         <div class="col col s4 m4 l4">
                             <img src="<?PHP echo base_url(); ?>assets/img/user.jpg" alt="" class="circle responsive-img valign profile-image">
                         </div>
-                        <div class="col col s8 m8 l8">
-                            <!--<ul id="profile-dropdown" class="dropdown-content">
-                               li><a href="#"><i class="mdi-action-face-unlock"></i> Profile</a>
-                               </li>
-                               <li><a href="#"><i class="mdi-action-settings"></i> Settings</a>
-                               </li>
-                               <li><a href="#"><i class="mdi-communication-live-help"></i> Help</a>
-                               </li>
-                               <li class="divider"></li>
-                               <li><a href="#"><i class="mdi-action-lock-outline"></i> Lock</a>
-                               </li>
-                               <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Logout</a>
-                               </li>
-                            </ul>-->
-                            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">ADMIN<!--<i class="mdi-navigation-arrow-drop-down right"></i>--></a>
+                        <div class=" col col s8 m8 l8">
+                            
+                            <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown">ADMIN</a>
                             <p class="user-roal">Super Administrador</p>
                         </div>
                     </div>
                 </li>
-                <li class="bold"><a href="calendario" class="waves-effect waves-cyan fc-state-active"><!--<i class="mdi-action-dashboard"></i>--> HOME</a>
+                <li class="bold"><a href="calendario" class="waves-effect waves-cyan verde "> HOME</a>
                 </li>
-                <!--<li class="bold"><a href="app-email.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i> Mailbox <span class="new badge">4</span></a>-->
                 </li>
-                <li class="bold"><a href="Cobro" class="waves-effect waves-cyan"><!--<i class="mdi-editor-insert-invitation"></i>--> COBROS</a>
+                <li class="bold"><a href="Cobro" class="waves-effect waves-cyan verde">COBROS</a>
                 </li>
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
-                        <li class="bold"><a href="pedido"  class="collapsible-header waves-effect waves-cyan"><!--<i class="mdi-action-invert-colors"></i>--> PEDIDOS</a>
+                        <li class="bold"><a href="pedido"  class=" waves-effect waves-cyan verde">PEDIDOS</a>
 
                         </li>
 
-                        <li class="bold"><a href="Ruta" class="collapsible-header  waves-effect waves-cyan"><!--<i class="mdi-editor-border-all"></i>--> RUTAS</a>
+                        <li class="bold"><a href="Ruta" class="  waves-effect waves-cyan verde"><i class="material-icons">directions_car</i> RUTAS</a>
 
                         </li>
-                        <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><!--<i class="mdi-editor-insert-comment"></i>--> GRUPOS DE USUARIOS</a>
-
-                        </li>
+                        <li class="bold"><a href="Usuarios" class="  waves-effect waves-cyan verde"><i class="material-icons">group</i>GRUPOS DE USUARIOS</a> </li>
+                          <li class="bold"><a  href="#modal1" class="  waves-effect waves-cyan modal-trigger"><i class="material-icons">arrow_back</i> CERRRAR SESION</a> </li>
 
                     </ul>
                 </li>
-                <!--<li class="li-hover"><div class="divider"></div></li>
-                <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
-                <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
-                </li>
-                <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
-                </li>
-                <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
-                </li>
-                <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
-                </li>
-                <li class="li-hover"><div class="divider"></div></li>
-                <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
-                <li class="li-hover">
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                            <div class="sample-chart-wrapper">
-                                <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
-                            </div>
-                        </div>
-                    </div>
-                </li>-->
+               
             </ul>
             <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
         </aside>
         <!-- END LEFT SIDEBAR NAV-->
+        <div id="modal1" class="modal">
+    <div class="modal-content center">
+       <h6>¿DESEA CERRAR SU SESIÓN?</h6>
+       
+       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="salir" class=" modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+      
+      </div>
+   
+  </div>
 
         <!-- //////////////////////////////////////////////////////////////////////////// -->

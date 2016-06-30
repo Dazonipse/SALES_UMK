@@ -18,4 +18,5 @@ $route['calendario'] = 'calendario_controller/calendario';
 $route['Cobro'] = 'sales_controller/Facturas';
 $route['pedido'] = 'sales_controller/Pedido';
 $route['Ruta'] = 'sales_controller/Ruta';
+$route['Usuarios'] = 'sales_controller/Users';
 /****************************************/

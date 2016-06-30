@@ -33,4 +33,12 @@ class Sales_controller extends CI_Controller
         $this->load->view('footer/footer');
     }
 
+    public function Users()
+    {
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('contenido/administrador/GruposUsuarios');
+        $this->load->view('footer/footer');
+    }
+
 }

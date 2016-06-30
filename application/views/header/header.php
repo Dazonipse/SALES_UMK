@@ -49,8 +49,8 @@
                      </li>-->
                     <!-- Dropdown Trigger -->
                     <!--<li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>-->
-                    <li><a href="salir" > <i class="material-icons">ppower_settings_new</i></a>
-                    </li>
+                    <!--<li><a href="salir" > <i class="material-icons">ppower_settings_new</i></a>
+                    </li>-->
                 </ul>
             </div>
         </nav>

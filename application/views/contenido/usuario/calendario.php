@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                             <div class="col s12 m8 l9">
-                                <div id='calendar'></div>
+                                <div id='calendario'></div>
                             </div>
                         </div>
                     </div>

@@ -25,7 +25,7 @@
 
     /* initialize the calendar
     -----------------------------------------------------------------*/
-    $('#calendar').fullCalendar({
+    $('#calendario').fullCalendar(/*{
       header: {
         left: 'prev,next today',
         center: 'title',
@@ -37,7 +37,7 @@
       eventLimit: true, // allow "more" link when too many events
       events: [
         {
-          title: 'All Day Event',
+          title: 'Ando por aquí',
           start: '2015-05-01',
           color: '#9c27b0'
         },
@@ -99,4 +99,4 @@
       ]
     });
     
-  });
+  }*/);

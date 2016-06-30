@@ -8,7 +8,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m12 l12">
-                            <h5 class="breadcrumbs-title">COBROS</h5> <br>
+                            <h5 class="center breadcrumbs-title">COBROS</h5> <br>
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                     <div class="invoice-header">
                         <div class="row section">
                             <div class="col s12 m6 l6">
-                                <img src="<?PHP echo base_url();?>assets/img/unimark.png" " width="60%">
+                                <img id="logo" src="<?PHP echo base_url();?>assets/img/unimark.png"  width="60%">
                             </div>
 
                             <!--<div class="col s12 m6 l6">
@@ -55,42 +55,40 @@
                     <div class="divider"></div>
                     <div class="selectores">
                         <div class="row">
+
+                            <div class="col s3 offset-s1">
+                                <label for="id="Fecha1"">Desde: </label>
+                                 <input type="date" class="datepicker" id="Fecha1">
+                                 
+                            </div>
                             <div class="col s3">
-                                <p>RUTA</p>
-                                <select name="" id="">
-                                    <option value="">123</option>
+                                <label for="Fecha2">Hasta:</label>
+                                 <input type="date" class="datepicker" id="Fecha2">
+                                 
+                            </div>
+                            <div class="col s3">
+                                 <label for="">Selecciona la ruta</label>
+                              <select name="" id="">
+                                  <option value="">F01</option>
+                                   <option value="">F02</option>
+                                    <option value="">F03</option>
+                                     <option value="">F04</option>
+                                      <option value="">F05</option>
+                                       <option value="">F06</option>
+                                        <option value="">F07</option>
+
                               </select>
                             </div>
-                                <div class="col s6">
-                                    <!--Por fecha-->
-                                    <p>Generar por</p>
-                                    <select name="" id=""></select>
-                                </div>
-
+                                
                         </div>
                     </div>
 
                     <div class="invoice-lable">
                         <div class="row">
-                            <div class="col s12 m3 l3 cyan">
-                                <h4 class="white-text invoice-text">INVOICE</h4>
+                            <div class="col s12 m12 l12 cyan">
+                                <h4 class="center white-text invoice-text">Recaudación por Ruta / Vendedor</h4>
                             </div>
-                            <div class="col s12 m9 l9 invoice-brief cyan white-text">
-                                <div class="row">
-                                    <div class="col s12 m3 l3">
-                                        <p class="strong">Total Due</p>
-                                        <h4 class="header">$ 3,600.00</h4>
-                                    </div>
-                                    <div class="col s12 m3 l3">
-                                        <p class="strong">Invoice No</p>
-                                        <h4 class="header">MT_A_124563</h4>
-                                    </div>
-                                    <div class="col s12 m3 l3">
-                                        <p class="strong">Due Date</p>
-                                        <h4 class="header">22.05.2015</h4>
-                                    </div>
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
 
@@ -173,144 +171,7 @@
         <!-- END CONTENT -->
 
         <!-- //////////////////////////////////////////////////////////////////////////// -->
-        <!-- START RIGHT SIDEBAR NAV-->
-        <aside id="right-sidebar-nav">
-            <ul id="chat-out" class="side-nav rightside-navigation">
-                <li class="li-hover">
-                    <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
-                    <div id="right-search" class="row">
-                        <form class="col s12">
-                            <div class="input-field">
-                                <i class="mdi-action-search prefix"></i>
-                                <input id="icon_prefix" type="text" class="validate">
-                                <label for="icon_prefix">Search</label>
-                            </div>
-                        </form>
-                    </div>
-                </li>
-                <li class="li-hover">
-                    <ul class="chat-collapsible" data-collapsible="expandable">
-                        <li>
-                            <div class="collapsible-header teal white-text active"><i class="mdi-social-whatshot"></i>Recent Activity</div>
-                            <div class="collapsible-body recent-activity">
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-add-shopping-cart"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">just now</a>
-                                        <p>Jim Doe Purchased new equipments for zonal office.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-device-airplanemode-on"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Yesterday</a>
-                                        <p>Your Next flight for USA will be on 15th August 2015.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-store"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">Last Week</a>
-                                        <p>Jessy Jay open a new store at S.G Road.</p>
-                                    </div>
-                                </div>
-                                <div class="recent-activity-list chat-out-list row">
-                                    <div class="col s3 recent-activity-list-icon"><i class="mdi-action-settings-voice"></i>
-                                    </div>
-                                    <div class="col s9 recent-activity-list-text">
-                                        <a href="#">5 Days Ago</a>
-                                        <p>Natalya Parker Send you a voice mail for next conference.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header light-blue white-text active"><i class="mdi-editor-attach-money"></i>Sales Repoart</div>
-                            <div class="collapsible-body sales-repoart">
-                                <div class="sales-repoart-list  chat-out-list row">
-                                    <div class="col s8">Target Salse</div>
-                                    <div class="col s4"><span id="sales-line-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Payment Due</div>
-                                    <div class="col s4"><span id="sales-bar-1"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Delivery</div>
-                                    <div class="col s4"><span id="sales-line-2"></span>
-                                    </div>
-                                </div>
-                                <div class="sales-repoart-list chat-out-list row">
-                                    <div class="col s8">Total Progress</div>
-                                    <div class="col s4"><span id="sales-bar-2"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header red white-text"><i class="mdi-action-stars"></i>Favorite Associates</div>
-                            <div class="collapsible-body favorite-associates">
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Eileen Sideways</p>
-                                        <p class="place">Los Angeles, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Zaham Sindil</p>
-                                        <p class="place">San Francisco, CA</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Renov Leongal</p>
-                                        <p class="place">Cebu City, Philippines</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img online-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Weno Carasbong</p>
-                                        <p>Tokyo, Japan</p>
-                                    </div>
-                                </div>
-                                <div class="favorite-associate-list chat-out-list row">
-                                    <div class="col s4"><img src="images/avatar.jpg" alt="" class="circle responsive-img offline-user valign profile-image">
-                                    </div>
-                                    <div class="col s8">
-                                        <p>Nusja Nawancali</p>
-                                        <p class="place">Bangkok, Thailand</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
-        <!-- LEFT RIGHT SIDEBAR NAV-->
-
+        
     </div>
     <!-- END WRAPPER -->
 
