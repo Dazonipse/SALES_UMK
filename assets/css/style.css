@@ -1464,10 +1464,3 @@ footer.page-footer {
 {
   background-color: #00658e;
 }
-#rotar{
-  
-            -webkit-transition: all .6s ease-in-out;    /* safari - Chrome*/
-            -moz-transition: all .6s ease-in-out;       /* Firefox */
-            -o-transition: all .6s ease-in-out;         /* Opera */
-            transition: all .6s ease-in-out;
-}
