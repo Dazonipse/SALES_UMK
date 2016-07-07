@@ -10,6 +10,39 @@ class Sales_controller extends CI_Controller
 
 
     }
+    //funciones
+    #Home
+     public function Home()
+    {
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('home');
+        $this->load->view('footer/footer');
+    }
+
+    /** PEDIDO **/
+
+      public function Pedido()
+    {
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('contenido/usuario/pedido');
+        $this->load->view('footer/footer');
+    }
+    
+
+    public function DetallesPedido()
+    {
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('contenido/usuario/DetallesPedidos');
+        $this->load->view('footer/footer');
+
+    }
+
+    /** end Pedidos **/
+
+    /** Cobros **/
     public function Facturas()
     {
         $this->load->view('header/header');
@@ -18,27 +51,49 @@ class Sales_controller extends CI_Controller
         $this->load->view('footer/footer');
     }
 
-    public function Pedido()
+       public function recibo()
     {
         $this->load->view('header/header');
         $this->load->view('contenido/Menu');
-        $this->load->view('contenido/usuario/pedido');
+        $this->load->view('contenido/administrador/Recibo');
         $this->load->view('footer/footer');
     }
-    public function Ruta()
+    /** end modulo cobros  **/
+
+    /** observaciones **/
+     public function Observaciones()
     {
         $this->load->view('header/header');
         $this->load->view('contenido/Menu');
-        $this->load->view('contenido/administrador/rutas');
+        $this->load->view('contenido/usuario/observaciones');
         $this->load->view('footer/footer');
     }
 
+
+    /** Usuarios **/
     public function Users()
+    {
+        $data['user'] = $this->sales_model->usuarios();
+        $this->load->view('header/header');
+        $this->load->view('contenido/Menu');
+        $this->load->view('contenido/administrador/GruposUsuarios',$data);
+        $this->load->view('footer/footer');
+    }
+
+   /** Reportes **/
+
+   public function Reportes()
     {
         $this->load->view('header/header');
         $this->load->view('contenido/Menu');
-        $this->load->view('contenido/administrador/GruposUsuarios');
+        $this->load->view('contenido/administrador/Report');
         $this->load->view('footer/footer');
     }
+
+    
+
+   
+
+
 
 }

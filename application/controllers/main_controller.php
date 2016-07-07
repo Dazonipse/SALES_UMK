@@ -16,6 +16,7 @@ class Main_controller extends CI_Controller
     	$this->load->view('Pages/Admin/Main_view');
     	$this->load->view('footer/footer');
     }
+    
 
 
 }

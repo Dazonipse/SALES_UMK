@@ -1,11 +1,61 @@
 
+@font-face {
+    font-family: 'robotoblack';
+    src: url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.eot');
+    src: url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.woff2') format('woff2'),
+         url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.woff') format('woff'),
+         url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.ttf') format('truetype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.eot');
+    src: url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.woff2') format('woff2'),
+         url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.woff') format('woff'),
+         url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.ttf') format('truetype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.eot');
+    src: url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.woff2') format('woff2'),
+         url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.woff') format('woff'),
+         url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.ttf') format('truetype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.eot');
+    src: url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.woff2') format('woff2'),
+         url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.woff') format('woff'),
+         url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.ttf') format('truetype'),
+         url('/SALES_UMK/assets/font/Robot/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 body {
   background-color: #fcfcfc;
 
 }
-#main,
-footer {
+html{
+  font-family: 'robotomedium';
+  font-weight: 500;
+}
+#main {
   padding-left: 240px;
 }
 .margin {
@@ -1403,7 +1453,9 @@ tr.group:hover {
 ====================================================================================*/
 
 footer.page-footer {
-  padding-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  text-align: center!important;
 }
 /*----------------------------------------
     footer charts
@@ -1455,6 +1507,9 @@ footer.page-footer {
 {
   background: #00658E;
 }
+.colorNav{
+  background: #00658e;
+}
 
 .centrado
 {
@@ -1462,5 +1517,7 @@ footer.page-footer {
 }
 #colorMenu
 {
-  background-color: #00658e;
+  background-color: #00656a;
 }
+#SelectRuta
+{margin-top: 20px;}

@@ -14,9 +14,22 @@ $route['login'] = 'login_controller/Acreditar';
 $route['salir'] = 'login_controller/Salir';
 
 // FUNCIONALIDAD!!!
+$route['HOME'] = 'sales_controller/Home';
+
 $route['calendario'] = 'calendario_controller/calendario';
-$route['Cobro'] = 'sales_controller/Facturas';
+
 $route['pedido'] = 'sales_controller/Pedido';
-$route['Ruta'] = 'sales_controller/Ruta';
+$route['DetallesPedido']='sales_controller/DetallesPedido';
+
+
+$route['Cobro'] = 'sales_controller/Facturas';
+$route['Recibo']='sales_controller/recibo';
+
+$route['Observaciones'] = 'sales_controller/Observaciones';
+
 $route['Usuarios'] = 'sales_controller/Users';
+
+$route['Reportes'] = 'sales_controller/Reportes';
+
+
 /****************************************/

@@ -22,67 +22,14 @@
                          
                         </div>
                     </div>
-                    <div class="divider"></div>
+                    
                     <div class="selectores">
                       <div class="row">
-                        <p>  Grupos de Usuarios</p>
                         <div class="col s3">
-                          
-                              <ul class="collapsible" data-collapsible="accordion">
-                                  <li>
-                                    <div class="collapsible-header">Grupo de usuario 1</div>
-                                      <div class="collapsible-body">
-                                        <table class="bordered">
-                                          <tr>
-                                            <th>Nombre de usuario</th>
-                                            <th>ruta</th>
-                                          </tr>
-
-                                           <tbody>
-                                             <tr>
-                                               <td>Juanito</td>
-                                               <td>F01</td>
-                                             </tr>
-
-                                             <tr>
-                                               <td>Perenciano</td>
-                                               <td>F02</td>
-                                             </tr>
-                                           </tbody>
-                                        </table>
-                                      </div>
-                                  </li>
-                                  <li>
-                                      <div class="collapsible-header">Grupo de Usuario 2</div>
-                                        <div class="collapsible-body">
-                                              <table class="bordered">
-                                          <tr>
-                                            <th>Nombre de usuario</th>
-                                            <th>ruta</th>
-                                          </tr>
-
-                                           <tbody>
-                                             <tr>
-                                               <td>Juanito</td>
-                                               <td>F01</td>
-                                             </tr>
-
-                                             <tr>
-                                               <td>Perenciano</td>
-                                               <td>F02</td>
-                                             </tr>
-                                           </tbody>
-                                        </table>
-                                      </div>                                      
-                                        </div>
-                                  </li>
-                                 
-                              </ul>
-
+                          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">NUEVO</a>
                         </div>
-                      </div>
                         
-                    </div>
+                      </div>
 
 
                     <div class="invoice-table">
@@ -92,70 +39,99 @@
                                 <table class="striped">
                                     <thead>
                                     <tr>
-                                        <th >FECHA</th>
-                                        <th >RUTA</th>
-                                        <th >CLIENTE</th>
-                                        <th >MONTO</th>
-                                        <th>TOTAL</th>
-                                        <th>SALDO</th>
-
+                                        <th >No.</th>
+                                        <th >Usuario</th>
+                                        <th>Nombre de usuario</th>
+                                        <th >Fecha de Creación</th>
+                                        
+                                      
                                     </tr>
                                     </thead>
-                                    <tbody>
 
-                                    <tr>
-                                        <td>29/06/2016</td>
-                                        <td>F4</td>
-                                        <td>CL00256</td>
-                                        <td>C$ 500</td>
-                                        <td>C$ 1000</td>
-                                        <td>C$ 500</td>
-                                    </tr>
+                                      <tbody>
 
-                                    <tr>
-                                        <td>29/06/2016</td>
-                                        <td>F4</td>
-                                        <td>CL00256</td>
-                                        <td>C$ 500</td>
-                                        <td>C$ 1000</td>
-                                        <td>C$ 500</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>29/06/2016</td>
-                                        <td>F4</td>
-                                        <td>CL00256</td>
-                                        <td>C$ 500</td>
-                                        <td>C$ 1000</td>
-                                        <td>C$ 500</td>
-                                    </tr>
-                                    
-                                    </tbody>
+                                          <?php
+                                                        $i=1;
+                                                        foreach ($user as $key) {
+                                                           echo "
+                                                            <tr>                                    
+                                                                <td>".$i."</td>
+                                                                <td>".$key['Usuario'].".</td>
+                                                                <td>".$key['NombreUsuario']."</td>
+                                                                <td>".$key['FechaCreacion']."</td>
+                                                                
+                                                            </tr>
+                                                            ";
+                                                            $i++;
+                                                        }
+                                        ?>
+                                      
+                                      </tbody>
                                 </table>
                             </div>
 
                         </div>
                     </div>
 
-                    <!--<div class="invoice-footer">
-                        <div class="row">
-                            <div class="col s12 m6 l6">
-                                <p class="strong">Payment Method</p>
-                                <p>Please make the cheque to: AMANDA ORTON</p>
-                                <p class="strong">Terms & Condition</p>
-                                <ul>
-                                    <li>You know, being a test pilot isn't always the healthiest business in the world.</li>
-                                    <li>We predict too much for the next year and yet far too little for the next 10.</li>
-                                </ul>
-                            </div>
-                            <div class="col s12 m6 l6 center-align">
-                                <p>Approved By</p>
-                               <img src="images/signature-scan.png" alt="signature">
-                                <p class="header">AMANDA ORTON</p>
-                                <p>Managing Director</p>
-                            </div>
+                                        <!-- Modal Structure -->
+                      <div id="modal1" class="modal">
+                        <div class="modal-content">
+                          
+                                  <center><h4> NUEVO USUARIO</h4></center>
+      
+                          <div class="row">
+                                  <form class="col s12" action="<?php echo base_url('index.php/nuevoUser');?>"method="post" name="formnuevo">
+                                    <div class="row">
+                                      <div class="input-field col s6">
+                                        <input name="unoUser" placeholder="Nombre" id="nombre" type="text" class="validate">
+                                        <label for="nombre"></label>
+                                      </div>
+                                      <div class="input-field col s6">
+                                        <input name="dosUser" placeholder="Nombre de usuario"id="usuario1" type="text" class="validate">
+                                        <label for="usuario1"></label>
+                                      </div>
+                                    </div>
+                                  
+                                    <div class="row">
+                                      <div class="input-field col s6">
+                                        <input name="tres" placeholder="Contraseña" id="pass" type="password" class="validate">
+                                        <label for="pass"></label>
+                                      </div>
+                                      <div class="input-field col s6">
+                                        <input name="cuatro" placeholder="Escriba de nuevo la contraseña"id="pass2" type="password" class="validate">
+                                        <label for="pass2"></label>
+                                      </div>
+                                    </div>
+
+                                      <div class="row">
+                                      <div class=" input-field col s6"  >
+                                        <select name="permiso" id="tipoUser">
+                                           <option value="" disabled selected>Tipo de Usuario</option>
+                                              <option value="1">Service</option>
+                                                <option value="2">Administrativo</option>               
+                                          </select>
+                                      </div>
+                                    </div>
+                                         <div class="modal-footer"> 
+                          <div class="row">
+                             <div class="col s12">
+                              <div class="col s6">
+                                  <a href="#!" class=" modal-action modal-close waves-effect f btn">Cancelar</a>
+                              </div>
+                              <div class="col s6">
+                                  <a href="#!" class=" modal-action  waves-effect f btn" onclick="compararuser()">Aceptar</a>
+                              </div>
+                          </div> 
+                          </div>
+                      </div>   
+                                   </form>
+                          </div>
+        
+
+
                         </div>
-                    </div>-->
+                       
+                      </div>
 
                 </div>
             </div>
