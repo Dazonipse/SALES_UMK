@@ -21,8 +21,8 @@ class Login_model extends CI_Model
             $this->db->where('Password',$pass);
             
             $query = $this->db->get('usuarios');
-            print_r($query->result_array());
-            if($query->num_rows() == 1){
+            //print_r($query->result_array());
+            if($query->num_rows() > 0){
                 return $query->result_array();
             }
             return 0;

@@ -9,8 +9,6 @@ class Login_controller extends CI_Controller
             parent::__construct();
             $this->load->model('login_model');
             $this->load->library('session');
-            
-
         }
 
     public function index()

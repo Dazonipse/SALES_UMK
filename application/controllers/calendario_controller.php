@@ -21,6 +21,4 @@ class Calendario_controller extends CI_Controller
         $this->load->view('footer/footer');
     }
 
-
-
 }

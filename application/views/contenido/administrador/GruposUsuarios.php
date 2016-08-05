@@ -1,145 +1,144 @@
 <!---->
 
-  <section id="content">
+<section id="content">
 
-    <!--breadcrumbs start-->
-            <div id="breadcrumbs-wrapper" class=" grey lighten-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m12 l12">
-                            <h5 class="center breadcrumbs-title">USUARIOS</h5> <br>
-                        </div>
-                    </div>
-                </div>
+  <!--breadcrumbs start-->
+  <div id="breadcrumbs-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <h5 class="center negra breadcrumbs-title">USUARIOS</h5> <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--breadcrumbs end-->
+  <!--start container-->
+  <div class="container">
+    <div id="invoice">
+      <div class="invoice-header">
+      </div><br>
+
+      <div class="selectores">
+        <div class="row">
+          <div class="offset-l10 right col s12 l2">
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">NUEVO</a>
+          </div>
+
+        </div><br>
+
+        <div class="invoice-table">
+          <div class="row">
+            <div class="col s12 m12 l12">
+            <table class="tbl" id="table_id" class="display">
+                <thead>
+                    <tr class="tblcabecera">
+                          <th>No.</th>
+                          <th>Nombre de usuario</th>
+                          <th>Permisos</th>
+                          <th>Fecha de Creación</th> 
+                          <th>Opción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                      if (!($user)) {}
+                      else{
+                    $i=1;
+                    foreach ($user as $key) {
+                    $opcion="";$privilegio="";
+
+                    switch ($key['Activo']) {
+                      case '0':$opcion="<a href='#' onclick='editarUsuario(".'"'.$key['UsuarioID'].'"'.",".'"'.$key['Activo'].'"'.")'><i style='color:red'; class='material-icons'>highlight_off</i></a>";break;                      
+                      case '1':$opcion="<a href='#' onclick='editarUsuario(".'"'.$key['UsuarioID'].'"'.",".'"'.$key['Activo'].'"'.")'><i style='color:green'; class='material-icons'>done_all</i></a>";break;
+                      }
+                      switch ($key['Privilegio']) {
+                        case '0':$privilegio= "Super Administrador";break;
+                        case '1':$privilegio= "Administrativo";break;
+                        case '2':$privilegio= "Atención al Cliente";break;
+                        default:$privilegio= "Reporteria";break;
+                      }
+                    echo "
+                    <tr>                                    
+                      <td class='regular'>".$i."</td>
+                      <td class='negra'>".$key['NombreUsuario']."</td>
+                      <td class='regular'>".$privilegio."</td>
+                      <td class='regular'>".$key['FechaCreacion']."</td>
+                      <td>".$opcion."</td> 
+                    </tr>";
+                    $i++;
+                  }
+                  }?> 
+                </tbody>
+            </table>            
             </div>
-            <!--breadcrumbs end-->
-               <!--start container-->
-            <div class="container">
-                <div id="invoice">
-                    <div class="invoice-header">
-                        <div class="row section">
-                            
-                         
-                        </div>
-                    </div>
-                    
-                    <div class="selectores">
-                      <div class="row">
-                        <div class="col s3">
-                          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">NUEVO</a>
-                        </div>
-                        
-                      </div>
+          </div>
+        </div>
 
-
-                    <div class="invoice-table">
-                        <div class="row">
-                            <div class="col s12 m12 l12">
-                              <p class="center">LISTA DE USUARIOS</p>
-                                <table class="striped">
-                                    <thead>
-                                    <tr>
-                                        <th >No.</th>
-                                        <th >Usuario</th>
-                                        <th>Nombre de usuario</th>
-                                        <th >Fecha de Creación</th>
-                                        
-                                      
-                                    </tr>
-                                    </thead>
-
-                                      <tbody>
-
-                                          <?php
-                                                        $i=1;
-                                                        foreach ($user as $key) {
-                                                           echo "
-                                                            <tr>                                    
-                                                                <td>".$i."</td>
-                                                                <td>".$key['Usuario'].".</td>
-                                                                <td>".$key['NombreUsuario']."</td>
-                                                                <td>".$key['FechaCreacion']."</td>
-                                                                
-                                                            </tr>
-                                                            ";
-                                                            $i++;
-                                                        }
-                                        ?>
-                                      
-                                      </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-                    </div>
-
-                                        <!-- Modal Structure -->
-                      <div id="modal1" class="modal">
-                        <div class="modal-content">
-                          
-                                  <center><h4> NUEVO USUARIO</h4></center>
-      
-                          <div class="row">
-                                  <form class="col s12" action="<?php echo base_url('index.php/nuevoUser');?>"method="post" name="formnuevo">
-                                    <div class="row">
-                                      <div class="input-field col s6">
-                                        <input name="unoUser" placeholder="Nombre" id="nombre" type="text" class="validate">
-                                        <label for="nombre"></label>
-                                      </div>
-                                      <div class="input-field col s6">
-                                        <input name="dosUser" placeholder="Nombre de usuario"id="usuario1" type="text" class="validate">
-                                        <label for="usuario1"></label>
-                                      </div>
-                                    </div>
-                                  
-                                    <div class="row">
-                                      <div class="input-field col s6">
-                                        <input name="tres" placeholder="Contraseña" id="pass" type="password" class="validate">
-                                        <label for="pass"></label>
-                                      </div>
-                                      <div class="input-field col s6">
-                                        <input name="cuatro" placeholder="Escriba de nuevo la contraseña"id="pass2" type="password" class="validate">
-                                        <label for="pass2"></label>
-                                      </div>
-                                    </div>
-
-                                      <div class="row">
-                                      <div class=" input-field col s6"  >
-                                        <select name="permiso" id="tipoUser">
-                                           <option value="" disabled selected>Tipo de Usuario</option>
-                                              <option value="1">Service</option>
-                                                <option value="2">Administrativo</option>               
-                                          </select>
-                                      </div>
-                                    </div>
-                                         <div class="modal-footer"> 
-                          <div class="row">
-                             <div class="col s12">
-                              <div class="col s6">
-                                  <a href="#!" class=" modal-action modal-close waves-effect f btn">Cancelar</a>
-                              </div>
-                              <div class="col s6">
-                                  <a href="#!" class=" modal-action  waves-effect f btn" onclick="compararuser()">Aceptar</a>
-                              </div>
-                          </div> 
-                          </div>
-                      </div>   
-                                   </form>
-                          </div>
-        
-
-
-                        </div>
-                       
-                      </div>
-
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <center><h4> NUEVO USUARIO</h4></center>
+            <div class="row">
+              <form id="frmUsuario" class="col s12" action="<?php echo base_url('index.php/NuevoUsuario');?>" method="post" name="formnuevo">
+                <div class="row">                  
+                  <div class="input-field col s12 l6">
+                    <input name="nombre" placeholder="Nombre de usuario" id="usuario1" type="text" class="validate">
+                    <label for="usuario1"></label>
+                  </div>
+                  <div class=" input-field col s12 l6"  >
+                    <select name="permiso" id="tipoUser">
+                     <option value="" disabled selected>Tipo de Usuario</option>
+                     <option value="0">Super Administrador</option>
+                     <option value="1">Administrativo</option>
+                     <option value="2">Atención al Cliente</option>
+                     <option value="3">Reporteria</option>
+                   </select>
+                 </div>
                 </div>
-            </div>
-            <!--end container-->
 
+                <div class="row">
+                  <div class="input-field col s12 l6">
+                    <input name="pass" placeholder="Contraseña" id="pass" type="password" class="validate">
+                    <label for="pass"></label>
+                  </div>
+                  <div class="input-field col s12 l6">
+                    <input name="cuatro" placeholder="Escriba de nuevo la contraseña" id="pass2" type="password" class="validate">
+                    <label for="pass2"></label>
+                  </div>
+                </div>
 
+               <div class="modal-footer"> 
+                <div class="row">
+                  <div class="offset-l3 col s12 l3">
+                    <a href="#!" class="waves-effect btn" onclick="crearUsuario()">Aceptar</a>
+                  </div>
+                  <div class="col s12 l3">                    
+                    <a href="#!" class=" modal-action modal-close waves-effect btn">Cancelar</a>
+                  </div>
+              </div>
+            </div>   
+          </form>
+        </div>
+      </div>
+    </div>
 
+   <!-- Modal Structure -->
+    <div style='width:30%;' id="modaleditar" class="modal">
+      <div class="modal-content center">
+        <h5 id="mensaje"></h5>
+        <div class="row center">
+          <div class="offset-l3 col s12 l3">
+           <a href=""><i id='ok' style='color:green;' class="material-icons">done</i></a>
+          </div>
+          <div class="col s12 l3">
+            <i style='color:red;' class="material-icons modal-action modal-close">highlight_off</i>
+          </div>
+        </div>
+      </div>
 
-
-
-  </section>
+    </div>
+    </div>
+  </div>
+<!--end container-->
+</section>

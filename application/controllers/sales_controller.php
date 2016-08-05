@@ -20,17 +20,6 @@ class Sales_controller extends CI_Controller
         $this->load->view('footer/footer');
     }
 
-    /** PEDIDO **/
-
-      public function Pedido()
-    {
-        $this->load->view('header/header');
-        $this->load->view('contenido/Menu');
-        $this->load->view('contenido/usuario/pedido');
-        $this->load->view('footer/footer');
-    }
-    
-
     public function DetallesPedido()
     {
         $this->load->view('header/header');
@@ -40,16 +29,7 @@ class Sales_controller extends CI_Controller
 
     }
 
-    /** end Pedidos **/
-
-    /** Cobros **/
-    public function Facturas()
-    {
-        $this->load->view('header/header');
-        $this->load->view('contenido/Menu');
-        $this->load->view('contenido/administrador/facturas');
-        $this->load->view('footer/footer');
-    }
+    /** end Pedidos **/ 
 
        public function recibo()
     {
@@ -69,16 +49,6 @@ class Sales_controller extends CI_Controller
         $this->load->view('footer/footer');
     }
 
-
-    /** Usuarios **/
-    public function Users()
-    {
-        $data['user'] = $this->sales_model->usuarios();
-        $this->load->view('header/header');
-        $this->load->view('contenido/Menu');
-        $this->load->view('contenido/administrador/GruposUsuarios',$data);
-        $this->load->view('footer/footer');
-    }
 
    /** Reportes **/
 
