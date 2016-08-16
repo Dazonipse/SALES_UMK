@@ -5,11 +5,11 @@ class Login_controller extends CI_Controller
 {
 
 	public function __construct()
-        {
+    {
             parent::__construct();
             $this->load->model('login_model');
             $this->load->library('session');
-        }
+    }
 
     public function index()
     {
@@ -36,10 +36,9 @@ class Login_controller extends CI_Controller
     	} else {
     		$name = $this->input->get_post('txtUsuario');
 			$pass = $this->input->get_post('txtpassword');
-			
-            echo $name."/".$pass;
+		    
             //echo md5($pass);
-           $data['user'] = $this->login_model->login($name, $pass);
+            $data['user'] = $this->login_model->login($name, $pass);
 
 
     		 if ($data['user'] == 0) {
@@ -53,18 +52,14 @@ class Login_controller extends CI_Controller
                                 );
                 $this->session->set_userdata($sessiondata);
 
-
-                  if($this->session->userdata)
+                if($this->session->userdata)
                 {
 
                     redirect('calendario');
                 }
-
-
     			 
     		}
     	}
     }
-
 
  }

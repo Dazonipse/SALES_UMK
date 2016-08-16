@@ -20,7 +20,7 @@ class Login_model extends CI_Model
             $this->db->where('NombreUsuario', $name);
             $this->db->where('Password',$pass);
             
-            $query = $this->db->get('usuarios');
+            $query = $this->db->get('usuario');
             //print_r($query->result_array());
             if($query->num_rows() > 0){
                 return $query->result_array();

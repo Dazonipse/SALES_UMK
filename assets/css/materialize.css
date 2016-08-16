@@ -5803,7 +5803,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #FFF;
-  background-color: #00658e;
+  background-color: #173aaa;
   /*background-color: #ff4081;Antiguo Estilo*/
   text-align: center;
   letter-spacing: .5px;
@@ -5815,7 +5815,7 @@ small {
   cursor: pointer; }
   .btn:hover, .btn-large:hover {
     /*background-color: #ff5a92; antiguo*/
-    background-color: #00658eg;}
+    background-color: #253778;}
 
 .btn-floating {
   display: inline-block;
@@ -6199,7 +6199,7 @@ select:focus {
 
 button:focus {
   outline: none;
-  background-color: #ff548e; }
+  background-color: #2196f3; }
 
 label {
   font-size: 0.8rem;

@@ -18,7 +18,32 @@ $(document).ready(function(){
             }
         },
     });
+
+
+    $( "#tipoUser" ).change(function() {
+     if(this.value==4){
+        $('.grupoOculto').show();
+      }
+      else{
+       $('.grupoOculto').hide(); 
+      }
+    });
+
 });
+
+function updateEstadoPedido(estado,idPedido)
+{
+  $('.progress').show("slow");
+     $.ajax({
+            url: "ajaxUpdatePedido/"+estado+"/"+idPedido,
+            type: "get",
+            async:true,
+            success: function(json){
+                $(location).attr('href',"pedido");
+            }
+        });
+}
+
 function editarUsuario(id,estado)
 {
 	//alert("el estado es: "+estado);
@@ -33,7 +58,6 @@ function editarUsuario(id,estado)
   $('#modaleditar').openModal();
 
   $("#ok").click(function(){
-	//alert("entro a ajax");
   $.ajax({
             url: "EditUsuarios/"+id+"/"+estado,
             type: "post",
@@ -120,5 +144,59 @@ function detalleCobro(id)
               ]
             });
       $('#modalDetalle').openModal();
+}
 
+function detallePedido(id)
+{
+     var form_data = {
+      name: id
+    };
+   $.ajax({
+      url: "ajaxDetallePedido",
+      type: 'POST',
+      dataType: 'json',
+      data: form_data,
+        success:function(datos){
+                $.each(datos, function(key, val) 
+                {
+                  $("#NoPedido").empty();
+                  $("#cliente").empty();
+                  $("#NoPedido").append("# "+val.IdPedido);
+                  $("#cliente").append(val.Cliente);
+                });            
+        },
+    });
+    Objtable = $('#tbldetalles').DataTable();
+            Objtable.destroy();
+            Objtable.clear();
+            Objtable.draw();
+            $('#tbldetalles').DataTable({
+                "order": [[ 1, "desc" ]],
+                "searching":false,
+                ajax: "ajaxPedido/"+id,
+                "ordering": false,
+                "info": false,
+                "bPaginate": false,//DESABILITA LOS BOTONES, SEARCH Y PAGINACION
+                "pagingType": "full_numbers",
+                "lengthMenu": [[10, -1], [10, "Todo"]],
+                "language": {
+                    "emptyTable": "No hay datos disponibles en la tabla",
+                    "lengthMenu": '_MENU_ ',
+                    "search": '<i class=" material-icons">search</i>',
+                    "loadingRecords": "Cargando...",
+                    "paginate": {
+                        "first": "Primera",
+                        "last": "Última ",
+                        "next":       "Siguiente",
+                        "previous":   "Anterior"
+                    }
+                },
+               columns: [                    
+                    { "data": "IdAarticulo" },
+                    { "data": "Descripcion" },
+                    { "data": "Cantidad" },
+                    { "data": "Precio" }
+              ]
+            });
+      $('#modalPedido').openModal();
 }
