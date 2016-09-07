@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="input-field col s12 center">
                     <img src="<?PHP echo base_url();?>assets/img/user.jpg" alt="" class="circle responsive-img valign profile-image-login">
-                    <p class="center login-form-text">SALES UNIMARK S.A</p>
+                    <p class="center login-form-text negra">SALES UNIMARK S.A</p>
                 </div>
             </div>
             <div class="row margin">

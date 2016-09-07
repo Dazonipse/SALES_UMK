@@ -48,6 +48,7 @@ class Login_controller extends CI_Controller
                                 'id' => $data['user'][0]['UsuarioID'],
                                 'UserN' => $data['user'][0]['NombreUsuario'],
                                 'Permiso' => $data['user'][0]['Privilegios'],
+                                'Pass' => $data['user'][0]['Password'],
                                 'logged' => 1
                                 );
                 $this->session->set_userdata($sessiondata);

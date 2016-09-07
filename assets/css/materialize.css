@@ -2221,7 +2221,8 @@ table {
     text-align: center; }
 
 thead {
-  border-bottom: 1px solid #d0d0d0; }
+  /*border-bottom: 1px solid #d0d0d0;*/
+   }
 
 td, th {
   padding: 15px 5px;
@@ -2291,15 +2292,17 @@ td, th {
   overflow: hidden;
   position: relative; }
   .collection .collection-item {
-    background-color: #fff;
+    background-color: #b4e4fb;
     line-height: 1.5rem;
     padding: 10px 20px;
     margin: 0;
     border-bottom: 1px solid #e0e0e0; }
     .collection .collection-item.avatar {
-      height: 84px;
+      height: 61px;
       padding-left: 72px;
-      position: relative; }
+      position: relative;
+       margin: 2px;
+     border-radius: 10px 10px 10px 10px;}
       .collection .collection-item.avatar .circle {
         position: absolute;
         width: 42px;
@@ -2311,11 +2314,11 @@ td, th {
       .collection .collection-item.avatar i.circle {
         font-size: 18px;
         line-height: 42px;
-        color: #fff;
-        background-color: #999;
+        color: #20b1e7;
+        background-color: #fff;
         text-align: center; }
       .collection .collection-item.avatar .title {
-        font-size: 16px; }
+        font-size: 16px; color: #253778; }
       .collection .collection-item.avatar p {
         margin: 0; }
       .collection .collection-item.avatar .secondary-content {
@@ -5827,7 +5830,7 @@ small {
   height: 37px;
   line-height: 37px;
   padding: 0;
-  background-color: #ff4081;
+  background-color: #173aaa;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
@@ -6319,7 +6322,7 @@ textarea.materialize-textarea {
   input[type=number]:focus:not([readonly]) + label,
   input[type=search]:focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #ff4081; }
+    color: #2196f3; }
   input[type=text].valid, input[type=text]:focus.valid,
   input[type=password].valid,
   input[type=password]:focus.valid,
@@ -6341,8 +6344,8 @@ textarea.materialize-textarea {
   input[type=search]:focus.valid,
   textarea.materialize-textarea.valid,
   textarea.materialize-textarea:focus.valid {
-    border-bottom: 1px solid #4CAF50;
-    box-shadow: 0 1px 0 0 #4CAF50; }
+    border-bottom: 1px solid #486bd4;
+    box-shadow: 0 1px 0 0 #486bd4; }
   input[type=text].valid + label:after, input[type=text]:focus.valid + label:after,
   input[type=password].valid + label:after,
   input[type=password]:focus.valid + label:after,
@@ -6464,7 +6467,7 @@ textarea.materialize-textarea {
     -ms-transition: color 0.2s;
     transition: color 0.2s; }
     .input-field .prefix.active {
-      color: #ff4081; }
+      color: #486BD4; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea {
     margin-left: 3rem;
@@ -8069,7 +8072,7 @@ select {
 
 .picker__date-display {
   text-align: center;
-  background-color: #ff4081;
+  background-color: #20B1E7;
   color: #fff;
   padding-bottom: 15px;
   font-weight: 300; }
@@ -8081,7 +8084,7 @@ select {
   background: #fef3f7; }
 
 .picker__weekday-display {
-  background-color: #ff1c69;
+  background-color: #253778;
   padding: 10px;
   font-weight: 200;
   letter-spacing: .5;
@@ -8151,7 +8154,7 @@ select {
 .picker__close, .picker__today {
   font-size: 1.1rem;
   padding: 0 1rem;
-  color: #ff4081; }
+  color: #243876; }
 
 .picker__nav--prev:before,
 .picker__nav--next:before {

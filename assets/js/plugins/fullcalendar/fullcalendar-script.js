@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     $('#calendario').fullCalendar({
          header: {
                 left: '',
@@ -14,8 +13,8 @@ $(document).ready(function() {
     $("#selectRuta").change(function(){
     $(".progress").show();
     //alert(this.value);
-    $('#calendario').fullCalendar( 'destroy' );
-    $('#calendario').fullCalendar({
+    $('#calendario').fullCalendar( 'destroy' );//DESTRUYE EL CALENDARIO PARA LIMPIARLO
+    $('#calendario').fullCalendar({//SE VUELVE A CREAR EL CALENDARIO
                         header: {
                             left: '',
                             center: 'title',
@@ -26,6 +25,7 @@ $(document).ready(function() {
                         defaultView: 'basicWeek',//MUESTRA EL CALENDARIO EN SEMANA
                         hiddenDays: [0], //CODIGO PARA OCULTAR EL DOMINGO
                         editable: false, //EKISDE
+                        eventDurationEditable:true,
                         events: "ajaxCalendario/"+this.value,//RUTA DEL AJAX PARA TRAER LOS EVENTOS                                 
     }); 
     setTimeout(function(){ $(".progress").hide(); }, 2200);   

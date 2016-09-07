@@ -26,7 +26,9 @@ $route['Observaciones'] = 'sales_controller/Observaciones';
 $route['Usuarios'] = 'usuarios_controller/Users';
 $route['NuevoUsuario'] = 'usuarios_controller/nuevoUsuario';
 $route['EditUsuarios/(:any)/(:any)'] = 'usuarios_controller/EditUsers/$1/$2';
-
+$route['EditPass'] = 'usuarios_controller/EditPass';
+$route['ajaxCrearGrupos']='usuarios_controller/ajaxCrearGrupos';
+$route['getGrupos']='usuarios_controller/getGrupos';
 
 /*******/////////RECIBO/////////////*/
 $route['Cobro'] = 'recibo_controller';
@@ -35,12 +37,16 @@ $route['getDetalle2'] = 'recibo_controller/obtenerDetalle2';
 
 /*******/////////PEDIDO/////////////*/
 $route['pedido'] = 'pedido_controller/Pedido';
+$route['detallepedido/(:any)'] = 'pedido_controller/detallePedido/$1';
 $route['ajaxDetallePedido']='pedido_controller/cabeceraPedido';
 $route['ajaxPedido/(:any)']='pedido_controller/DetallePedido/$1';
 $route['ajaxUpdatePedido/(:any)/(:any)']='pedido_controller/UpdateEstado/$1/$2';
 
 /***********////////REPORTES /////////////*/
-$route['Reportes'] = 'sales_controller/Reportes';
+$route['Reportes'] = 'reportes_controller';
+$route['ajaxReportes/(:any)/(:any)/(:any)/(:any)']='reportes_controller/ajaxReportes/$1/$2/$3/$4';
+$route['ajaxReportes2/(:any)']='reportes_controller/ajaxReportesDetalle/$1';
+$route['ajaxPdfPedido/(:any)']='reportes_controller/ajaxPdfDetalle/$1';
 
 
 /**********////CALENDARIO***///********/

@@ -29,8 +29,7 @@ class Sales_controller extends CI_Controller
 
     }
 
-    /** end Pedidos **/ 
-
+    /** end Pedidos **/
        public function recibo()
     {
         $this->load->view('header/header');
@@ -38,8 +37,6 @@ class Sales_controller extends CI_Controller
         $this->load->view('contenido/administrador/Recibo');
         $this->load->view('footer/footer');
     }
-    /** end modulo cobros  **/
-
     /** observaciones **/
      public function Observaciones()
     {
@@ -48,22 +45,4 @@ class Sales_controller extends CI_Controller
         $this->load->view('contenido/usuario/observaciones');
         $this->load->view('footer/footer');
     }
-
-
-   /** Reportes **/
-
-   public function Reportes()
-    {
-        $this->load->view('header/header');
-        $this->load->view('contenido/Menu');
-        $this->load->view('contenido/administrador/Report');
-        $this->load->view('footer/footer');
-    }
-
-    
-
-   
-
-
-
 }

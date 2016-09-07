@@ -1312,21 +1312,17 @@ li.search-out:hover{
       font-weight: 300;
       padding: 10px;
     }
-
-  #btnNuevo, #aceptar, #close{
+  #btnNuevo, #aceptar, #close, #aceptarGrupo{
       color: #fff!important;
     }
-
     #email-list .collection .collection-item.avatar img.circle {
       padding: 0px;
     }
     #email-list .attach-file {
       -ms-transform: rotate(90deg);
       /* IE 9 */
-
       -webkit-transform: rotate(90deg);
       /* Chrome, Safari, Opera */
-
       transform: rotate(90deg);
       color: #9e9e9e;
       font-size: 1.1rem;
@@ -1500,6 +1496,10 @@ li.search-out:hover{
   .regular{
     font-family: 'robotoregular'!important;
   }
+  .copyright{
+    font-size: 10px;
+    color: #253778;
+  }
   .tblcabecera{
     background-color: #173AAA;
     color: white;
@@ -1518,8 +1518,8 @@ li.search-out:hover{
     font-size: 12px;
   }
   .tbl,tr,th, td {
-    border: 2px solid #A8E1F8;
-    text-align: center;
+    /*border: 2px solid #A8E1F8;
+    text-align: center;*/
   }
   .tbl tbody tr.odd{
     background-color:#a7b0d0;
@@ -1527,11 +1527,8 @@ li.search-out:hover{
   .tbl tbody tr.even{
     background-color: #FFF;
   }
-  .tbldetalles tr th td{
-    border: none!important;
-  }
   .tbldetalles{
-    border: none; width: 684px;
+    width: 684px;
   }
   #cliente{
     font-size:14px; color:#173AAA; margin:0px;
@@ -1549,7 +1546,19 @@ li.search-out:hover{
   }
    #estadoPedido{
     width: 62%;
-    height: 2rem;
+    font-size: 13px;
+    font-family: 'robotobold';
+    color: #174aaa;
+  }
+  .iconospass{
+    color: #253778;
+  }
+  .textospass{
+    color: red!important;
+    opacity: 1;
+  }
+  .margeninferior{
+    margin-bottom: 0px;
   }
   /******************************ESTILOS DE MODALES *******************************/
   .btnCerrar{
@@ -1593,3 +1602,111 @@ li.search-out:hover{
   }
   #modalPedido
   {width: 70%;}
+
+ #tblCobros thead tr th{
+  border: 2px solid #a8e1f8 !important;
+  }
+  #tblCobros tbody tr td{
+  border: 2px solid #a8e1f8 !important;
+  }
+
+#tbldetalles thead tr th{
+  border: 2px solid #a8e1f8 !important;
+  }
+#tbldetalles tbody tr td{
+  border: 2px solid #a8e1f8 !important;
+  }
+  #tbldetalles thead tr th{
+  border: 2px solid #a8e1f8 !important;
+  }
+#tbldetalles tbody tr td{
+  border: 2px solid #a8e1f8 !important;
+  }
+.tbl thead tr th{
+  border: 2px solid #a8e1f8 !important;
+  }
+.tbl tbody tr td{
+  border: 2px solid #a8e1f8 !important;
+  }
+#NoRecibo {
+    font-size: 18px;
+    color: #173AAA;
+    margin: 0px;
+}
+#NoPedido {
+  font-size: 15px;
+    color: #173AAA;
+    margin: 0px;
+}
+
+#labelusuario {
+  padding: 0;
+  font-size: 12px!important;
+}
+#textousuario{
+  margin-left: 0px;
+}
+#dropdownMenu{
+  font-size: 11px;
+}
+  /*******TOTALES E IVA ESTILOS*****/
+.margen{
+  margin-right: 8px;
+  margin-left: 8px;
+}
+#tblDetallesIva .totalTitulo{
+    border: none!important;
+    text-align: right!important;
+    font-family: 'robotoblack';
+    padding: 5px 5px;
+    font-size: 13px;
+    color: #173AAA;
+  }
+#tblDetallesIva .totalNumero{
+  border: none!important;
+  background-color: #173aaa;
+  font-family: 'robotoblack';
+  padding: 3px;
+  border-radius: 0px;
+  font-size: 13px;
+  color: #fff;
+  }
+  #tblDetallesIva .totalNumero2{
+  background-color: #486BD4;
+  border: none!important;
+  font-family: 'robotoblack';
+  padding: 1px;
+  border-radius: 0px;
+  font-size: 13px;
+  color: #fff;
+  }
+  /***********ESTILOS REPORTES ******************/
+  .menureportes:hover{
+    background-color: #78d4fc;
+    cursor: pointer;
+  }
+   .collection .collection-item.active {
+    background-color: #5ac7f7;
+  }
+  .searchreport{
+    font-size: 40px;
+    cursor: pointer;
+  }
+  .searchreport:hover{
+    color: #2196f3;
+  }
+  #tblReporte{
+
+  }
+  .detalle{
+    cursor: pointer;
+    color:green;
+  }
+#tblReportDetalles th{
+    background-color: #2582d2;
+    color: white;
+    font-size: 14px!important;
+  }
+  #tblReporte tr td{
+    font-size: 12px;
+  }
