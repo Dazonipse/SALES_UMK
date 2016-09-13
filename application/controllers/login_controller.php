@@ -56,7 +56,7 @@ class Login_controller extends CI_Controller
                 if($this->session->userdata)
                 {
 
-                    redirect('calendario');
+                    redirect('HOME');
                 }
     			 
     		}

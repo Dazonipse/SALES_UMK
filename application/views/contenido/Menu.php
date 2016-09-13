@@ -31,7 +31,7 @@
           </li>
           <ul class="fondoMenu">
             <li ><a href="<?php echo base_url('index.php/HOME')?>" class=" verde menu "><i class="material-icons">home</i> inicio</a> </li>
-            <li ><a href="<?php echo base_url('index.php/calendario')?>" class="verde menu"><i class="material-icons">date_range</i>plan de trabajo</a>  </li>
+            <!--li ><a href="<?php echo base_url('index.php/calendario')?>" class="verde menu"><i class="material-icons">date_range</i>plan de trabajo</a>  </li>-->
             <li ><a href="<?php echo base_url('index.php/pedido')?>" class="verde menu"><i class="material-icons">shopping_cart</i>pedidos</a></li>
             <li ><a href="<?php echo base_url('index.php/Cobro')?>" class="verde menu"><i class="material-icons">business_center</i>cobros</a></li>
             <li ><a href="<?php echo base_url('index.php/Usuarios')?>" class="verde menu"><i class="material-icons">group</i>usuarios</a> </li>

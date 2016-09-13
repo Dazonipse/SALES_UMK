@@ -118,8 +118,8 @@
                     <label for="pass"></label>
                   </div>
                   <div class="input-field col s12 l6">
-                    <input name="cuatro" placeholder="Escriba de nuevo la contraseña" id="pass2" type="password" class="validate">
-                    <label for="pass2"></label>
+                    <input name="cuatro" placeholder="Escriba de nuevo la contraseña" id="cuatro" type="text" class="validate">
+                    <label for="ekisde"></label>
                   </div>
                 </div>
                <div class="modal-footer"> 

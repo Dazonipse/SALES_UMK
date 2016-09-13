@@ -282,18 +282,20 @@ function editarUsuario(id,estado)
 
 function crearUsuario()
 {
-        var texto  = document.getElementById("usuario1").value;
-        var texto2 = document.getElementById("tipoUser").value;       
-        var texto3 = document.getElementById("pass").value; 
-        var texto4 = document.getElementById("pass2").value;   
+      var texto  = document.getElementById("usuario1").value;
+      var texto2 = $("#tipoUser option:selected").text();
+      var texto3 = document.getElementById("pass").value; 
+      var texto4 = document.getElementById("cuatro").value;
       if (/^\s*$/.test(texto))
-      {alert("Ingrese un usuario");texto.focus();return false;}
-      if (/^\s*$/.test(texto4))
-      { alert("Ingrese un ID, este debe coincidir con el biometrico");texto4.focus();return false;}     
+      {alert("Ingrese un usuario");texto.focus();return false;}         
       if (/^\s*$/.test(texto2))
-      {alert("Ingrese una contraseña");return false;}
-      if (/^\s*$/.test(texto3))
-      {alert("Ingrese un Rol");return false;}
+      {alert("Seleccione el rol");return false;}
+      if (texto3=="")
+      {alert("Ingrese la primera contraseña");return false;}
+
+      /*if (texto4=="")
+      { alert("Ingrese la segunda contraseña");return false;}  */
+
       if (texto3.length<8) 
       {alert("La contraseña debe tener al menos 8 caracteres");return false;
       }

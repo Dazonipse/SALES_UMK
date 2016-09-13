@@ -19,7 +19,7 @@ class Reportes_model extends CI_Model
                 $json['data'][$i]["hola2"] = '<a class="negra" href="ajaxPdfPedido/'.$row["IdPedido"].'">'.$row['IdPedido'].'</a>';
                 $json['data'][$i]["hola3"] = $row['IdCliente'];
                 $json['data'][$i]["hola4"] = $row['Cliente'];
-                $json['data'][$i]["hola5"] = number_format($row['Monto'],2);
+                $json['data'][$i]["hola5"] = number_format(floatval($row['Monto']),2);
                 $i++;
             }
                 $json['columns'][0]['data'] = "opcion";
@@ -60,7 +60,7 @@ class Reportes_model extends CI_Model
                 $json['data'][$i]["hola6"] = $row['Precio'];
                 $i++;
             }
-            echo json_encode($json);    
+            echo json_encode($json);
     }
 }
 ?>

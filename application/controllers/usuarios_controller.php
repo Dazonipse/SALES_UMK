@@ -27,11 +27,11 @@ class Usuarios_controller extends CI_Controller
         $nombre=$_POST['nombre'];
         $permiso=$_POST['permiso'];
         $pass=$_POST['pass'];
-        if ($permiso==4) {
+        /*if ($permiso==4) {
             echo "vendedor";;
-        }else{echo "otro...";}
-        //$this->usuarios_model->guardarUsuario($nombre,$pass,$permiso);
-        //$this->Users();
+        }else{echo "otro...";}*/
+        $this->usuarios_model->guardarUsuario($nombre,$pass,$permiso);
+        $this->Users();
     }
     public function EditPass()
     {
